@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18D0D6"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:padding="16dp">
+
+    <!-- Developer's Name -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viddoer"
+        android:textSize="24sp"
+        android:textColor="@color/Blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Developer's Introduction -->
+    <TextView
+        android:id="@+id/textViewIntroduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Life become easy when You become strong !"
+        android:textSize="19sp"
+        android:layout_below="@+id/textViewName"
+        android:textIsSelectable="true"
+        android:textStyle="italic"
+        android:textColor="@color/DeepPink"
+        android:textAlignment="center"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"/>
+
+    <!-- Developer's Image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/imageViewDeveloper"
+        android:layout_below="@+id/textViewIntroduction"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/viddoer_logo"
+        app:civ_border_width="4dp"
+        app:civ_border_color="@android:color/darker_gray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewDeveloper"
+        android:id="@+id/relative">
+
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/HotPink"
+        android:text="Connect With Us"
+        android:textSize="25dp" />
+
+    <!-- Social Media Links -->
+    <LinearLayout
+        android:id="@+id/linearLayoutSocialMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal">
+
+
+        <!-- Instagram Link -->
+        <ImageView
+            android:id="@+id/imageViewInstagram"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/instagram"/>
+
+        <!-- YouTube Link -->
+        <ImageView
+            android:id="@+id/imageViewYouTube"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/youtube"
+            android:layout_marginStart="16dp"/>
+
+        <!-- GitHub Link -->
+        <ImageView
+            android:id="@+id/imageViewGitHub"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/github"
+            android:layout_marginStart="16dp"/>
+
+        <!-- Facebook Link -->
+        <ImageView
+            android:id="@+id/imageViewFacebook"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/facebook"
+            android:layout_marginStart="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#56FAF4"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose an Option"
+        android:textAlignment="center"
+        android:textColor="@color/Red"
+        android:layout_margin="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio144"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/HotPink"
+                android:text="144pp"/>
+            <RadioButton
+                android:id="@+id/radio240"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/HotPink"
+                android:text="240p"/>
+
+            <RadioButton
+                android:id="@+id/radio360"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/HotPink"
+                android:text="360p"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radio720"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/HotPink"
+                android:text="720p"/>
+
+            <RadioButton
+                android:id="@+id/radio1080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/HotPink"
+                android:text="1080p"/>
+
+            <RadioButton
+                android:id="@+id/radio4k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/HotPink"
+                android:text="Max"/>
+        </LinearLayout>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnDownloadVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B716E4"
+        android:textColor="@color/White"
+        android:text="Download"/>
+
+    <Button
+        android:id="@+id/btnDownloadMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F32596"
+        android:textColor="@color/White"
+        android:text="Download Music"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF6969"
+        android:textColor="@color/White"
+        android:text="Cancel"/>
+</LinearLayout>

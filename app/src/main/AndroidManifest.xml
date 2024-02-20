@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/viddoer_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/viddoer_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VideoDownloaderPro">
+        <activity
+            android:name=".SqlPythonActivity"
+            android:exported="false" />
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8404134982147261~1276444683" />
+
+
+        <activity
+            android:name=".Notification_music.MusicApp"
+            android:exported="true"
+            android:label="Musics">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Notification_music.MusicNotificaion"
+            android:exported="true" />
+
+        <service android:name=".Notification_music.Services.OnClearFromRecentService" />
+
+        <receiver android:name=".Notification_music.Services.NotificationActionService" />
+        <receiver
+            android:name=".NewAppWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".OverLapApp"
+            android:exported="false" />
+        <activity
+            android:name=".Instagram_Details.InstaStorySaver"
+            android:exported="false" />
+        <activity
+            android:name=".InstaSearchHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Instagram_Details.InstaVideoProfileDownloader"
+            android:exported="false" />
+        <activity
+            android:name=".ImageViewPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".GameTicTac"
+            android:exported="false" /> <!-- tools:targetApi="31" -->
+        <activity
+            android:name=".HelpUser"
+            android:exported="false" />
+        <activity
+            android:name=".Instagram_Details.InstaFetchUsername"
+            android:exported="false" />
+        <activity
+            android:name=".Whatsapp_Status.WhatsappStatus"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".AudioPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".AboutDeveloper"
+            android:exported="false" />
+        <activity
+            android:name=".YoutubeVideo"
+            android:exported="true"
+            android:label="Youtube Video Share">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InstaReelDownloader"
+            android:exported="true"
+            android:label="Insta Reel Downloader Share">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FrontApp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

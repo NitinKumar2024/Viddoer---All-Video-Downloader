@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+
+    <item
+        android:id="@+id/action_search"
+        android:title="History"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/history" />
+    <item
+        android:id="@+id/instagram_hack"
+        android:title="Instagram Tracker"
+
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/instagram"/>
+
+
+
+    <item
+        android:id="@+id/action_nitin"
+        android:title="Connect With Us"
+        android:icon="@drawable/nitin"
+         />
+    <item
+        android:id="@+id/help_user"
+        android:title="Help"
+        android:icon="@drawable/nitin"
+        />
+    <item
+        android:id="@+id/game_tic_tac"
+        android:title="Play Game"
+        android:icon="@drawable/nitin"
+        />
+
+
+</menu>

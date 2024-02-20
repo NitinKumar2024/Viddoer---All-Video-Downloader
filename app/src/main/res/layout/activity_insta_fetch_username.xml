@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#96D5DD"
+    tools:context=".Instagram_Details.InstaFetchUsername">
+
+    <ImageView
+        android:id="@+id/search_imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_chat" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:id="@+id/editTextLink"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/colorPurple"
+            android:ems="10"
+            android:textColorHint="@color/MediumVioletRed"
+            android:hint="Enter Instagram Username"
+            android:textColor="@color/MediumVioletRed"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/buttonFetch"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/Aqua"
+            android:text="Continue" />
+    </LinearLayout>
+
+</LinearLayout>

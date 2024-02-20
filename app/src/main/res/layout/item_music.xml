@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/viddoer_logo"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/music_logo"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_toEndOf="@+id/music_logo"
+        android:textColor="@color/HotPink"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+
+        android:text="Nitin Kumar"
+        android:id="@+id/music_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/music_logo"
+        android:background="@color/DarkGray"/>
+</RelativeLayout>

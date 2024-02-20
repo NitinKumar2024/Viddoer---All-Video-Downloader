@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "854766660677",
+    "project_id": "viddoer",
+    "storage_bucket": "viddoer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854766660677:android:21826187da9a652005072c",
+        "android_client_info": {
+          "package_name": "com.nitin.videodownloaderpro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdUPKd_uYQlVLoc1h6XS0NMKYCE3Edwmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

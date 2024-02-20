@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#64ECC1">
+
+    <!-- Profile Picture -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+
+        app:civ_border_width="5dp"
+        app:civ_border_color="@android:color/darker_gray"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <ImageView
+        android:id="@+id/help_imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_chat" />
+
+    <!-- User Details -->
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+
+        android:textColor="#000000"
+        android:layout_below="@id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- User Stats -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/usernameTextView"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post"
+
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginEnd="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followers"
+
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginEnd="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followings"
+
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <!-- Bio -->
+    <TextView
+        android:id="@+id/bioTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="16dp"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"
+        android:layout_below="@+id/bioTextView">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_post"
+            android:icon="@drawable/user"
+            android:text="Images" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_video"
+            android:icon="@drawable/video_player"
+            android:text="Videos" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- Posts Grid (You can use RecyclerView for this) -->
+    <!-- For simplicity, I am using a placeholder GridView here -->
+    <GridView
+        android:id="@+id/postsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:layout_below="@id/tab_layout"
+        android:layout_marginTop="16dp"/>
+
+
+
+
+</RelativeLayout>
